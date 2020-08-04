@@ -1,73 +1,63 @@
-header{
-    background: coral;
-    padding: 15px;
-    text-align: center;
-    font-family: sans-serif;
-    position: fixed;
-    width: 100%;
-    margin-left: 15px;
-    z-index:1;
-    left: 0;
-    top: 0;
-   }
-   header h1{
-   color: whitesmoke;
-   border: 8px solid whitesmoke;
-   padding: 6px 12px;
-   display: inline-block;
-   border-radius: 30%;
-   }
-   
-   
-   .welcome{
-       
-       color: white;
-       padding: 20px;
-       position:absolute;
-       left: 30px;
-       bottom: 10%;
-   }
-   .mario h2{
-   font-size:1.5em;
-   text-decoration: overline;
-   margin-left: 20px;
-   }
-   
-   .mario span{
-   font-size: 48px;
-   font-family: monospace;
-   margin-left: 1.2em;
-   }
-   nav{
-   background-color: #f4f4f4;
-   padding: 20px;
-   position: sticky;
-   top: 150px;
-   margin-left: 10px;
-   margin-right: 5px;
-   }
-   nav ul{
+.main-nav{
+background-color: red;
+
+}
+.main-nav img{
+padding-top: 30px;
+
+}
+
+.main-nav ul{
        white-space: nowrap;
        max-width: 1200px;
        margin:0 auto;
    }
-   nav li {
-   width: 25%;
+   .main-nav li {
    display: inline-block;
    font-size: 24px;
+   padding: bottom 100px;
+   border:90px;
+   padding:20px;
    }
-   nav li a{
-   text-decoration:none;
+   .main-nav li a{
+   text-decoration:none;  
+   }
+  .main-nav li a:visited{
+   color:whitesmoke;
+  }
+       
+
+   .main-nav li a:hover{
+   text-decoration: underline;
+   background-color: rgb(233, 197, 197);
+   padding: 5px;
+   }
    
-   
+       
+   .mario {
+   font-size:20px;
+   font-weight: solid bolder;
+   font-family: monospace;
+   letter-spacing:5p;
+   margin-left:30%;
+   margin-top:60px;
    }
-   main{
-   max-width: 100%;
-   width: 1200px;
-   margin:10px auto ;
-   padding: 0 40px;
-   box-sizing: border-box;
-   }
+  hr{
+ margin-left:0px;
+ margin-top:0px;
+  } 
+  #logo{
+      font-size: 60px;
+  }
+  .mario h6{
+   font-size:18px;
+  }
+.main img{
+ position: absolute;
+ margin-left:70%;
+ margin-top:-40%;
+}
+
    main h1{
    text-align: center;
    color: #f63232;
@@ -82,8 +72,7 @@ header{
    text-emphasis: none;
    
    }
-   .image1 {
-   position:center;
+ ;
    
    }
    .join{
@@ -124,10 +113,7 @@ header{
    padding:15px ;
    text-align:center;
    }
-   nav li a:hover{
-   text-decoration: underline;
-   background-color: black;
-   padding: 5px;
+   
    }
    .images li :hover{
    position: relative;
