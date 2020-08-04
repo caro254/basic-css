@@ -38,8 +38,7 @@ padding-top: 30px;
    font-size:20px;
    font-weight: solid bolder;
    font-family: monospace;
-   letter-spacing:5p;
-   margin-left:30%;
+   margin-left:9%;
    margin-top:60px;
    }
   hr{
@@ -48,16 +47,27 @@ padding-top: 30px;
   } 
   #logo{
       font-size: 60px;
+      letter-spacing:15px;
   }
   .mario h6{
    font-size:18px;
+   display: block;
   }
 .main img{
  position: absolute;
  margin-left:70%;
- margin-top:-40%;
+ margin-top:-15%;
 }
-
+.image img{
+    position: relative;
+    left:-210px ;
+  top:80px;
+}
+.character{
+position: relative;
+left:390px;
+top:-600px;
+}
    main h1{
    text-align: center;
    color: #f63232;
@@ -70,9 +80,6 @@ padding-top: 30px;
    color: #4b4b4b;
    text-align: center;
    text-emphasis: none;
-   
-   }
- ;
    
    }
    .join{
@@ -113,8 +120,7 @@ padding-top: 30px;
    padding:15px ;
    text-align:center;
    }
-   
-   }
+
    .images li :hover{
    position: relative;
    top: 4px;
