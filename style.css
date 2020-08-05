@@ -97,9 +97,22 @@ a:link {
   margin-right:10px;
   word-spacing: 30px;
   margin-top: 0;
+}
 
+.video iframe{
+margin-left: 150px;
+}
+
+.features{
+  background-image: url(pictures/wallpaper.jpg);
+  background-size: cover;
+ 
   
 }
+.features img{
+  display: inline;
+}
+
    .join{
    margin:2px 0px ;
    text-align: center;
