@@ -68,20 +68,38 @@ position: relative;
 left:390px;
 top:-600px;
 }
-   main h1{
-   text-align: center;
-   color: #f63232;
-   font-size: 30px;
-   text-align: center;
-   padding-top: -10px;
-   }
-   article p{
-   line-height: 2em;
-   color: #4b4b4b;
-   text-align: center;
-   text-emphasis: none;
    
-   }
+.blocks img{
+  margin-top:-200px;
+  margin-left: 80px;
+  position:relative;
+  margin-bottom: -150px;
+}
+.words a{
+  display: inline-block;
+  border: 5px solid red;
+padding: 15px;
+  color: red;
+  font-weight: 600;
+  font-family: monospace;
+  border-radius: 50px;
+ text-decoration: none;
+ position:relative;
+ margin-left: 150px;
+
+ 
+}
+a:link {
+  color: #0A58A5;
+  text-decoration: none;
+  font-weight: bold;
+  display:inline-block; 
+  margin-right:10px;
+  word-spacing: 30px;
+  margin-top: 0;
+
+  
+}
    .join{
    margin:2px 0px ;
    text-align: center;
