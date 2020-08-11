@@ -45,12 +45,9 @@ padding-left: 80px;
    }
   
        
-
-   #main-nav li a:hover{
-   text-decoration: none;
-   color: yellow;
-
-   }
+#main-nav :hover{
+  color: yellow;
+}
    
    .mario {
    font-size:20px;
