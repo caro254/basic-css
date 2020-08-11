@@ -2,8 +2,10 @@
 body{
   background-image: url(pictures/red.jpg);
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size:cover;
 }
+
+
 
 #main-nav img{
 padding-top: 10px;
@@ -128,9 +130,11 @@ padding: 10px;
 margin-left: 150px;
 }
 
+
+  
+
 .features{
-  background-image: url(pictures/wallpaper.jpg);
-  background-size: cover;
+  
   text-align: center;
   font-size: 50px;
   font-weight: bolder;
@@ -145,39 +149,57 @@ margin-left: 150px;
 }
 
 .features img{
-  display: inline;
+  display: inline-block;
 }
 
- .image1{
+.column {
   float: left;
-   position: relative;
-   margin: 0px;
- }
- .image2{
-  float: left;
-   position: relative;
-   margin: 0px;
- }
- .image3{
-  float: left;
-   position: relative;
-   margin: 0px;
- }
- .image4{
-  float: left;
-   margin: 0px;
- }
-  
-   .join{
-   margin:2px 0px ;
-   text-align: center;
-   padding:10px;
-   
+  width: 33.33%;
+  padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+   .column{
+    float: left;
+     position: relative;
+     margin: 0px;
+   }
+     .column img{
+      border:20px solid whitesmoke;
+      border-radius: 40px;
+      
+      }
+     .column a{
+    font-size: 20px;
+    background-color: white;
+    color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    border-color: blue;
+    width: 100%;
    
    }
+     .column img{
+      border:10px solid whitesmoke;
+      border-radius: 40px;
+      }
+     
+    
+     .join{
+     margin:2px 0px ;
+     text-align: left;
+     padding:10px;
+  
+     }
    
    .join h2{
-   font-size: 18px;
+   
+   display: block;
+    font-size: 18px;
    margin-top:1px;
    padding-top: 2px;
    border-top: 2px;

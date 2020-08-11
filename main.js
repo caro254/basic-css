@@ -6,3 +6,4 @@ function backToNormal(){
     var text =document.getElementById("para").style.color=""; 
 }
     
+
