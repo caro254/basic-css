@@ -131,28 +131,18 @@ margin-left: 150px;
 }
 
 .flex-container{
-  display:flex;
-padding: 5px;
- 
+  display:flexbox;
+padding-left:50px;
 
 }
 
 .flex-container img{
   border: 10px solid #fff;
   border-radius: 25px;
-
-  
+ 
 }
 
-.flex-container a{
- position: relative;
- top:150px;
- right: 200px;
- color:blue;
- border-color: blue;
- border: whitesmoke ;
- font-style: none;
-}
+
 .features{
   
   text-align: center;
@@ -173,11 +163,27 @@ padding: 5px;
     
      .join{
      margin:2px 0px ;
-     text-align: left;
+     text-align:center;
      padding:10px;
+     color: whitesmoke;
   
      }
-   
+
+     #email input {
+      width: 10%;
+      padding: 5px 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      margin-left: 40%;
+      
+    }
+   ::placeholder { 
+       color: rgb(49, 45, 45);
+       opacity: 1; 
+       font-family: san serif;
+       text-align: center;
+      display: inline-block;
+     }
    .join h2{
    
    display: block;
@@ -189,21 +195,9 @@ padding: 5px;
       
    }
    
-   .input{
-       padding:10px;
-       font-size: 60px;
-       border-radius: 40%;
-       text-align: center;
-       width:100%;
-     }
    
-     ::placeholder { 
-       color: red;
-       opacity: 1; 
-       font-family: san serif;
-       text-align: center;
-      display: inline-block;
-     }
+   
+     
    footer{
    background: #7e7c7c;
    color: white;
