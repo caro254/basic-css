@@ -1,8 +1,29 @@
 
+/* css  selector targets something ,the css block is the curly braces
+.........................................................................
+color: used to create an appealing website .
+types of colors:
+ name colors = red ,blue 
+ hex code = using color picker helps you pick a range of colors 
+ Hex code there 16 color combinaition from  0  to 9  and a to f
+ it starts with a # with 6 digits  for example #0000ff  blue , blakc is #000000
+ rgb  stands for  red blue green 
+............................................................................
+alpha can be added to rgba  to manipulate the image color variation  
+alpha is tranparency or opacity of a color 
+gradeints cna be used to manipulate colors for example background:radial-gradient(red 20%,blue 40%, green 30%)
+
+*/
+
+
 body{
   background-image: url(pictures/red.jpg);
   background-repeat: no-repeat;
   background-size:cover;
+  /*  images often repeat itself by default to fix  it  to avoid  it 
+  you type background-repeat: no-repeat
+  background size:cover occupies the whole page   to change the space an image occupies you use 
+  */
 }
 
 *{
@@ -71,6 +92,15 @@ padding-left: 80px;
  color: whitesmoke;
  
   } 
+
+  /* font manipulation 
+  font-size: 2em
+  font-weight is the bolding of the font
+  font-style is for italisizing
+  n/b a span tag is an inline container used for containing a certain piece of text wihtotu disrupting the flow 
+  
+
+  */
   #logo{
       font-size: 90px;
       letter-spacing: 10px;
@@ -137,16 +167,28 @@ margin-left: 150px;
   display:flexbox;
 padding-left:70px;
 box-sizing: border-box;
-border-right: 50px;
+border-right: 50px; 
+
+
 }
 
 .flex-container img{
   border: 10px solid #fff;
   border-radius: 25px;
-  margin-right:40px;
-
+  margin-right:40px; 
+  transition:0.5s all ease-in-out;
+}
+.flex-container:hover img{
+  transform:scale( 1.1);
 }
 
+/* box model is a layout feature =everything in css is considred a box
+content is on the center  folowed by
+ padding  space between content and the border ofthe content.paading give  more room  around the content. for internal space
+border is the seperation line between content ,padding and margin
+margin is the space between the border and all other content it is used for external space
+
+ */
 
 
 
@@ -159,7 +201,14 @@ border-right: 50px;
   font-family: fantasy;
    list-style: height 2.5em;
    letter-spacing: 2px;
-  
+ 
+   /* n/b  when using width use relative units such as percentage 
+   borders have size, style ,color = border:2px solid  
+   margin :90px(top and right) 40px(bottom left)
+ 
+ 
+ */
+   
 }
 .hori{
   margin-left:50%;
@@ -183,7 +232,15 @@ border-right: 50px;
       padding: 5px 10px;
       margin: 8px 0;
       box-sizing: border-box;
-      
+    
+    /*..................................................... 
+    text manipulation = text-decoration changes the lining of the text moslty for links 
+    text-decoration : none removes the underline of the link 
+    text-decoration:underline
+    text-decoration :overline
+    text-transform: capalize, uppercase ,lowercase;
+    text-align: center,left, right, justify makes the text fit in the same length by stretch the text;
+    */  
       
     }
    ::placeholder { 
@@ -212,3 +269,101 @@ border-right: 50px;
    }
 
   
+/* units =  absolute units are indepedent cm ,inch,pixel
+relative units depend on other element  these are = percentage, em,pt ,pc  the yare good for responsive design 
+ viewport is the dimensions of viewing  your webpage 
+*/
+
+/*
+flex-box means felxible box  used for laying out a webpage 
+flexbox=felxible box helps in arranging element  for responsive website
+fexbox is divided into two part  the container ans items 
+container is the parent element  that display  type is actice 
+flex items are child element of the container 
+
+creating a flexbox
+ <div class= "container">
+<div class= "container-item">A </div>
+<div class= "container-item">B </div>
+<div class= "container-item">C</div>
+</div>
+
+changing the order of items 
+<div class= "container">
+<div class= "container-item"> style="order:3;" A </div>
+flex-shrink:1;
+flex-grow:1;
+flex-basis:100px
+align-self:flex-end;
+<div class= "container-item">style="order:1;"  B </div>
+flex-shrink:2;
+flex-grow:5;
+flex-basis:100px
+align-self:flex-end;
+<div class= "container-item">style="order:2;"  C </div>
+flex-shrink:1;
+flex-grow:1;
+flex-basis:100px
+align-self:flex-start;
+</div>
+shorthand for flex (flex: 5 1 100px)
+
+
+
+flex grow ,shrink and basis - used to define extra spaces between the divs and are used for responsive design 
+
+
+css
+.container{
+  display: flex;
+  flex-direction:row, column-reverse
+  flex-wrap:wrap,nowrap
+  justify-content:flex-start, flex-end , center
+  justify-content:space-between ,space-around
+  align-items:felx-start , flex-end ,center 
+}
+
+using float
+can be used for images and text  but can only be used wiht ellemtns wihtin one container 
+float properties;
+
+
+properties of display 
+display:none;  can be used to hide item
+display:inline-block;  combines features of inline  and block 
+
+grid 
+grid system provides tools to layout container in specific way 
+grid provides width and heigth  while flexbox focus on width only 
+
+creating grid items
+<div class="grid-container">
+<div class="grid-item" sytle = "background: rgb(255,150,150);">1 </div>
+<div class="grid-item" sytle = "background: rgb(255,150,150);">2 </div>
+<div class="grid-item" sytle = "background: rgb(255,150,150);">3 </div>
+<div class="grid-item" sytle = "background: rgb(255,150,150);">4 </div>
+<div class="grid-item" sytle = "background: rgb(255,150,150);">5 </div>
+</div>
+
+css code 
+.grid-container{
+  backgroun-color : rgb(250, 250, 250);
+  margin:10px;
+  height:300px;
+  display:grid;
+  grid-template-column:auto auto auto;
+  grid-template-row:auto auto;
+  align-content: space between;(end ,start ,evenly) 
+}
+
+.grid-item{
+  color:black;
+  font-size:25px;
+  text-align:center;
+  width:70px;
+  line-height:40px;
+  margin:10px;
+}
+
+
+*/
