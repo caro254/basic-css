@@ -167,7 +167,7 @@ margin-left: 150px;
   display:flexbox;
 padding-left:70px;
 box-sizing: border-box;
-border-right: 50px; 
+border-right: 40px; 
 
 
 }
@@ -179,7 +179,7 @@ border-right: 50px;
   transition:0.5s all ease-in-out;
 }
 .flex-container:hover img{
-  transform:scale( 1.5);
+  transform:scale( 1.2);
 }
 
 /* box model is a layout feature =everything in css is considred a box
