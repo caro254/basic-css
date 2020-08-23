@@ -7,4 +7,4 @@ box model layout
 
 using pseudo element to create hover effects 
 importing stylish fonts 
-insertign video 
+inserting video 
